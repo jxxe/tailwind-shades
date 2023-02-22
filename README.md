@@ -2,7 +2,7 @@
 
 ## Usage
 ```js
-const { default: shadesOf } = require('tailwind-shades');
+const shadesOf = require('tailwind-shades');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
