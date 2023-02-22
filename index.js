@@ -1,4 +1,6 @@
-module.exports = hex => {
+module.exports = shadesOf;
+
+function shadesOf(hex) {
     const baseColor = hexToRgbArray(hex);
     const black = [0, 0, 0];
     const white = [255, 255, 255];
