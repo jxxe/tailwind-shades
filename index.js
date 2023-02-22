@@ -1,4 +1,4 @@
-export default function shadesOf(hex) {
+module.exports = hex => {
     const baseColor = hexToRgbArray(hex);
     const black = [0, 0, 0];
     const white = [255, 255, 255];
