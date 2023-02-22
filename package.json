@@ -1,0 +1,14 @@
+{
+    "author": {
+        "name": "Jerome Paulos"
+    },
+    "license": "MIT",
+    "type": "module",
+    "name": "tailwind-shades",
+    "version": "1.0.0",
+    "description": "Automatically generate 10 shades for Tailwind",
+    "main": "index.js",
+    "scripts": {
+        "test": "node ./tests.js"
+    }
+}
