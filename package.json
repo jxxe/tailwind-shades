@@ -3,7 +3,7 @@
   "license": "MIT",
   "type": "module",
   "name": "tailwind-shades",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically generate 10 shades for Tailwind",
   "main": "index.js",
   "scripts": {
