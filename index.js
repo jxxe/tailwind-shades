@@ -1,11 +1,19 @@
 module.exports = shadesOf;
 
-function shadesOf(hex) {
+/**
+ * Generate Tailwind-compatible shades from a single color
+ * @param {string} hex The hex code to generate shades from
+ * @param {*} halfShades Generate additional shades, e.g. at 150
+ * @returns {{[key: number]: string}}
+ */
+function shadesOf(hex, halfShades = false) {
     const baseColor = hexToRgbArray(hex);
     const black = [0, 0, 0];
     const white = [255, 255, 255];
 
-    const shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
+    let shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
+    if(halfShades) shades = [...shades, 150, 250, 350, 450, 650, 750, 850].sort();
+
     let result = {};
 
     for(let shade of shades) {
