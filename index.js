@@ -3,7 +3,7 @@ module.exports = shadesOf;
 /**
  * Generate Tailwind-compatible shades from a single color
  * @param {string} hex The hex code to generate shades from
- * @param {*} halfShades Generate additional shades, e.g. at 150
+ * @param {boolean} halfShades Generate additional shades, e.g. at 150
  * @returns {{[key: number]: string}}
  */
 function shadesOf(hex, halfShades = false) {
