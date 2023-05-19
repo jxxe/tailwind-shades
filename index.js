@@ -12,7 +12,7 @@ function shadesOf(hex, halfShades = false) {
     const white = [255, 255, 255];
 
     let shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
-    if(halfShades) shades = [...shades, 150, 250, 350, 450, 650, 750, 850].sort();
+    if(halfShades) shades = [...shades, 150, 250, 350, 450, 550, 650, 750, 850].sort();
 
     let result = {};
 
